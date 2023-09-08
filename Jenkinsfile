@@ -59,7 +59,7 @@ pipeline {
         { steps{
             script
             {
-                docker.build("newimagedocker", "-f  Dockerfile .")
+                sh 'docker build -t aayushmalviya/dockerlearn  .'
             }
         }
         }
