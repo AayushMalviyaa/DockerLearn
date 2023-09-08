@@ -59,7 +59,7 @@ pipeline {
         { steps{
             script
             {
-                docker.build("new imagedocker", "-f  Dockerfile .")
+                docker.build("newimagedocker", "-f  Dockerfile .")
             }
         }
         }
