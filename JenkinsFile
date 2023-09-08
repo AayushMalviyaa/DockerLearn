@@ -42,7 +42,7 @@ pipeline {
             steps{
             
             rtUpload (
-                serverId: 'windows_jfrog',
+                serverId: 'arti',
                 spec: '''{
                       "files": [
                         {
