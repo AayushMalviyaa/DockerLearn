@@ -63,9 +63,10 @@ pipeline {
             }
         }
         }
+        
         stage('run container')
         {
-            step
+            steps
             {
                 script
                 {
