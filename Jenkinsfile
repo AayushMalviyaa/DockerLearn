@@ -55,7 +55,7 @@ pipeline {
             }
         
         }
-        stage(image creation)
+        stage('image creation')
         {
             script
             {
