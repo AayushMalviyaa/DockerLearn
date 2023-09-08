@@ -47,7 +47,7 @@ pipeline {
                       "files": [
                         {
                           "pattern": "*.war",
-                          "target": "jenkins_pipeline"
+                          "target": "Main"
                         }
                      ]
                 }''',
