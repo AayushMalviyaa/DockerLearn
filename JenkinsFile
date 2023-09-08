@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Sonar Quality check'){
          steps {
-                withSonarQubeEnv('sonar_centos') {
+                withSonarQubeEnv('sonarqube-9.4') {
                     sh "mvn sonar:sonar"}
  
             }
