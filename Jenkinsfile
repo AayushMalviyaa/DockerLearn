@@ -55,6 +55,13 @@ pipeline {
             }
         
         }
+        stage(image creation)
+        {
+            script
+            {
+                docker build("dockerlearnimage","-f .")
+            }
+        }
       
     }
 }
