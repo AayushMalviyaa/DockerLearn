@@ -63,6 +63,16 @@ pipeline {
             }
         }
         }
+        stage('run container')
+        {
+            step
+            {
+                script
+                {
+                    sh 'docker run -d -p 3000:4000 --name dockerlearncontainer  aayushmalviya/dockerlearn'
+                }
+            }
+        }
       
     }
 }
