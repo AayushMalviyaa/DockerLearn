@@ -56,11 +56,12 @@ pipeline {
         
         }
         stage('image creation')
-        {
+        { steps{
             script
             {
                 docker build("dockerlearnimage","-f .")
             }
+        }
         }
       
     }
