@@ -70,7 +70,7 @@ pipeline {
             {
                 script
                 {
-                    sh 'docker run -d -p 3000:4000 --name dockerlearncontainer  aayushmalviya/dockerlearn'
+                    sh 'docker run -d -p 3000:8080 --name dockerlearncontainer  aayushmalviya/dockerlearn'
                 }
             }
         }
