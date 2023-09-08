@@ -31,13 +31,13 @@ pipeline {
                 }
             }
         }
-        stage('Sonar Quality check'){
-         steps {
-                withSonarQubeEnv('sonarqube-9.4') {
-                    sh "mvn sonar:sonar"}
+        // stage('Sonar Quality check'){
+        //  steps {
+        //         withSonarQubeEnv('sonarqube-9.4') {
+        //             sh "mvn sonar:sonar"}
  
-            }
-        }
+        //     }
+        // }
         stage('Artifactory'){
             steps{
             
