@@ -3,18 +3,11 @@ pipeline {
 
     tools {
        
-        maven "M2_HOME"
+        maven "maven.3.2.5"
     }
 
     stages {
-        stage('Checkout code'){
-             steps {
-               
-              git branch: 'main', url: 'https://github.com/Rishabh-Patel-git/CalculatorMvn.git'
-  
-            }
-
-        }
+        
         stage('Build') {
             steps {
 
